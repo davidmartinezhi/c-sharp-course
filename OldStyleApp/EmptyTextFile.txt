@@ -1,0 +1,22 @@
+﻿
+Data Types
+int
+    - sbyte -127 a 128
+    - short -32k a 32k
+    - int -2b a 2b
+    - long -9,000,000,000,000,000,000 a 9,000,000,000,000,000,000
+
+    use the smallest data type your value fits in
+
+float
+    - float add f at the end 1.99f. 7 digit precision (high demands for processing power)
+    - double 15 digit precision (except money calculations, there we use decimal)
+    - decimal 28 digit precision (high level of accuracy)
+
+bool
+    
+char
+    - contains a single letter or unicode
+
+string
+    - allows multiple letters and unicodes

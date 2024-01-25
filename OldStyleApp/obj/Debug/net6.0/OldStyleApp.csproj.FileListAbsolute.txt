@@ -1,0 +1,15 @@
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/bin/Debug/net6.0/OldStyleApp
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/bin/Debug/net6.0/OldStyleApp.deps.json
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/bin/Debug/net6.0/OldStyleApp.runtimeconfig.json
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/bin/Debug/net6.0/OldStyleApp.dll
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/bin/Debug/net6.0/OldStyleApp.pdb
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/obj/Debug/net6.0/OldStyleApp.csproj.AssemblyReference.cache
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/obj/Debug/net6.0/OldStyleApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/obj/Debug/net6.0/OldStyleApp.AssemblyInfoInputs.cache
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/obj/Debug/net6.0/OldStyleApp.AssemblyInfo.cs
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/obj/Debug/net6.0/OldStyleApp.csproj.CoreCompileInputs.cache
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/obj/Debug/net6.0/OldStyleApp.dll
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/obj/Debug/net6.0/refint/OldStyleApp.dll
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/obj/Debug/net6.0/OldStyleApp.pdb
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/obj/Debug/net6.0/OldStyleApp.genruntimeconfig.cache
+/Users/gerardomartinez/Desktop/Github/c-sharp course/OldStyleApp/OldStyleApp/obj/Debug/net6.0/ref/OldStyleApp.dll
