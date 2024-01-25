@@ -20,3 +20,21 @@ char
 
 string
     - allows multiple letters and unicodes
+
+They are usually saved in the stack (RAM)
+They can be stored in the heap if they are part of reference type (field in class or element in array,strings)
+reference stores where it is saved. reference is smaller in bites required
+An object could be reeally big and require a lot of memory, reference makes it more performant
+
+XML Documentation comments
+///<summary>
+//This method is very cool
+///</summary>
+**method**
+
+Console Methods
+write() prints and keep cursor on the same line. to see outputs
+writeline() prints and moves cursor to the next line
+read() takes input and returns ascii value of that input
+readline() takes integer or string and returns it as output
+readkey() takes string and returns the key info
