@@ -5,9 +5,10 @@ class Program
 {
     // static es que podemos llamar el metodo sin instanciar la clase
     // void es porque no regresa ningún valor
-    static void Main(string[] args) 
+    static void Main(string[] args)
     {
-        Conversions();
+        //ParseStringToNumber();
+        StringManipulation();
 
     }
 
@@ -71,6 +72,39 @@ class Program
 
 
         Console.Read();
+    }
+
+    static void ParseStringToNumber()
+    {
+        string a = "10";
+        string b = "11";
+        string c = a + b;
+        Console.WriteLine(c);
+
+        int num1 = Int32.Parse(a);
+        int num2 = Int32.Parse(b);
+        int num3 = int.Parse(a);
+        int result = num1 + num2;
+        Console.WriteLine(result);
+
+        string f = "1.2";
+        float x = float.Parse(f);
+        Console.WriteLine(x);
+
+
+        //if string is not a number value, we'll get an exception
+        //try parse tells us if it worked or if it didn't work
+
+
+
+
+        Console.Read();
+
+
+    }
+
+    static void StringManipulation()
+    {
     }
 }
 
