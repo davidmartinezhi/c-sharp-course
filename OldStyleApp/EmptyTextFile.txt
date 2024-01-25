@@ -38,3 +38,16 @@ writeline() prints and moves cursor to the next line
 read() takes input and returns ascii value of that input
 readline() takes integer or string and returns it as output
 readkey() takes string and returns the key info
+
+
+Classes start with capital letter and are camel cased
+Method names have the same approach
+
+Arguments have camel casing
+same for variables, avoid abreviations
+
+    No numbers at the start of variables, try to avoid underscore
+    underscore at the beginning is okay
+
+Use nouns to name classes
+    Methods are actions
