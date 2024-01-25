@@ -105,6 +105,40 @@ class Program
 
     static void StringManipulation()
     {
+        int age = 24;
+        string name = "David";
+
+        Console.WriteLine("Concatenation");
+        Console.WriteLine("Hello I'm " + name + " I'm " + age);
+
+        Console.WriteLine("Formatting");
+        Console.WriteLine("Hello I'm {0}, I'm {1} years old.", name, age);
+
+        Console.WriteLine("Interpolation");
+        Console.WriteLine($"Hello I'm {name}, I'm {age} years old.");
+
+        Console.WriteLine("Verbatim");
+        Console.WriteLine(@"Hello I'm {name},
+
+            I'm {age} years old."); //funciona bien para paths
+
+
+        //SubSubstring(int32) is used get get substring from string starting from specified index
+        //ToLower() used to convert string to lower case
+        //ToUpper()
+        //Trim() quite whitespace al inicio y al final
+        //InedxOf(string) used to get the first ocurrance of the string or character inside the string
+        //IsNullOrWhitespace, regresa true si string es nulo o no tiene nada
+        //string.Concat(val1,val2,val3)
+        //String.Format is used to insert the object or variable value inside any string
+        // we can replace value in specified format
+        //String.Format("any string {index}", object);
+
+
+
+
+
+        Console.Read();
     }
 }
 
