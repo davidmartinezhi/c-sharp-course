@@ -1,4 +1,8 @@
 ﻿using Microsoft.VisualBasic;
+/*
+ * cheatsheet
+ * https://cheatography.com/laurence/cheat-sheets/c/
+*/
 
 namespace OldStyleApp;
 class Program
@@ -18,10 +22,22 @@ class Program
     // void es porque no regresa ningún valor
     static void Main(string[] args)
     {
-        Console.WriteLine($"My birthday is going to always be {birthday}");
+        //Console.WriteLine($"My birthday is going to always be {birthday}");
         //ParseStringToNumber();
-        StringManipulation();
+        //StringManipulation();
 
+        //UsingInput();
+        TryCatchAndFinally();
+
+
+    }
+
+    //access modifier (static) return type method name (parameter 1, parameter 2)
+    //static is it refers to the class itself, not the object
+    public static void WriteSomething()
+    {
+        Console.WriteLine("Called from method");
+        Console.Read();
     }
 
     static void Variables()
@@ -157,6 +173,47 @@ class Program
 
 
         Console.Read();
+    }
+
+
+    public static void UsingInput()
+    {
+        /*
+        string input = Console.ReadLine();
+        Console.WriteLine(input);
+        Console.Read();
+        */
+
+        //get inputs
+        Console.Write("Type a number: ");
+        string num1 = Console.ReadLine();
+
+        Console.Write("Type another number: ");
+        string num2 = Console.ReadLine();
+
+        //transform strings to numbers
+        int num1Int = Int32.Parse(num1);
+        int num2Int = Int32.Parse(num2);
+
+        //make sum
+        int sum = num1Int + num2Int;
+
+        //print sum
+        Console.WriteLine(sum);
+
+
+        Console.Read();
+    }
+
+
+    public static void TryCatchAndFinally()
+    {
+        //use and obtain resources in try block
+        //deal with exceptional circunstances in catch block
+        //release the resources in the finally block
+
+        //prompting into an error
+
     }
 }
 
