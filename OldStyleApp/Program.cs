@@ -30,7 +30,7 @@ class Program
         //TryCatchAndFinally();
         //Operators();
         //TryParse();
-        SwitchCondition();
+        //SwitchCondition();
 
 
     }
@@ -338,5 +338,14 @@ class Program
 
         Console.ReadKey();
     }
+
+    public static void TernaryOperator()
+    {
+        //condition ? first expression : second expression;
+        //condition has to be true or false
+        //can chain line a ? b : c ? d : e -> a ? b : (c ? d : e)
+        Console.WriteLine("Sames as in javascript/typescript, method contains notes");
+    }
+
 }
 
