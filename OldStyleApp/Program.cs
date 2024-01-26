@@ -28,7 +28,8 @@ class Program
 
         //UsingInput();
         //TryCatchAndFinally();
-        Operators();
+        //Operators();
+        TryParse();
 
 
     }
@@ -282,6 +283,39 @@ class Program
 
 
         Console.ReadKey();
+    }
+
+    public static void TryParse()
+    {
+        String numberAsString = "1";
+        int parsedValue;
+
+        //we can use this with other numeric data types
+        bool success = int.TryParse(numberAsString, out parsedValue); //will return true if succesfull, else false
+
+        if (success) Console.WriteLine("Parse was successfull");
+        else Console.WriteLine("Parse failed");
+
+
+        Console.WriteLine("What is the temperature?");
+        string temperature = Console.ReadLine();
+        int numTemp;
+        int number;
+        bool userEnteredANumber = int.TryParse(temperature, out number);
+
+
+        if (userEnteredANumber) //check if user entered correct value
+        {
+            numTemp = number;
+        }
+        else
+        {
+            numTemp = 0;
+            Console.WriteLine("Value entered was no number, 0 set as temperature");
+        }
+
+        Console.ReadKey();
+
     }
 }
 
