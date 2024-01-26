@@ -213,6 +213,40 @@ class Program
         //release the resources in the finally block
 
         //prompting into an error
+        Console.WriteLine("Please enter a number!");
+        string userInput = Console.ReadLine();
+
+        try
+        {
+            //we try this code
+            int userInputAsInt = int.Parse(userInput); //we'll input string that wont be able to be parsed
+
+        }
+        catch (FormatException) //can use generic exception or specific ones
+        {
+            Console.WriteLine("Format Exception, please enter int.");
+            //throw; //this would throw the error
+        }
+        catch (OverflowException)
+        {
+            Console.WriteLine("Overflow exception.");
+        }
+        catch (ArgumentNullException)
+        {
+            Console.WriteLine("Argument Null exception, the value was empty (null)");
+        }
+        catch (Exception) //generic exception
+        {
+            Console.WriteLine("General exception");
+        }
+        finally //this code is always executed whenever try and catch are done. Its cool for example to close connections
+        {
+            
+            Console.WriteLine("This is called always");
+        }
+
+
+        Console.ReadKey();
 
     }
 }
