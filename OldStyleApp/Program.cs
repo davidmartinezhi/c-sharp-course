@@ -27,7 +27,8 @@ class Program
         //StringManipulation();
 
         //UsingInput();
-        TryCatchAndFinally();
+        //TryCatchAndFinally();
+        Operators();
 
 
     }
@@ -248,6 +249,39 @@ class Program
 
         Console.ReadKey();
 
+    }
+
+    public static void Operators()
+    {
+        int num1 = 5;
+        int num2 = 3;
+        int num3;
+
+        //unary operator
+        num3 = -num1; //multiplies num1 * -1
+        Console.WriteLine($"Num3 is: {num3}");
+
+        bool isSunny = true;
+        Console.WriteLine($"Is it sunny? it is {!isSunny}");
+
+        //increment operators, same for decrement
+        int num = 0;
+        num++;
+
+        Console.WriteLine($"Num is {num}");
+        Console.WriteLine($"Num is {++num}"); //pre increment
+        Console.WriteLine($"Num is {num++}"); //post increment
+        Console.WriteLine($"Num is {num}");
+
+        //relational and type operators
+        // val1 < val2
+        // val1 == val2
+        // val1 != val2
+        // val1 && val2
+        // val1 || val2
+
+
+        Console.ReadKey();
     }
 }
 
