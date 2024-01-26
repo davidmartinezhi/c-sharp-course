@@ -29,7 +29,8 @@ class Program
         //UsingInput();
         //TryCatchAndFinally();
         //Operators();
-        TryParse();
+        //TryParse();
+        SwitchCondition();
 
 
     }
@@ -316,6 +317,26 @@ class Program
 
         Console.ReadKey();
 
+    }
+
+    public static void SwitchCondition()
+    {
+        int age = 25;
+
+        switch (age)
+        {
+            case 15:
+                Console.WriteLine("To young to enter the club.");
+                break;
+            case 25:
+                Console.WriteLine("Okay to enter the club.");
+                break;
+            default:
+                Console.WriteLine("How old are you?");
+                break;
+        }
+
+        Console.ReadKey();
     }
 }
 
