@@ -122,7 +122,7 @@ class Program
 
             I'm {age} years old."); //funciona bien para paths
 
-
+        //sringValue.substring(starting index, length) (igual que en c++)
         //SubSubstring(int32) is used get get substring from string starting from specified index
         //ToLower() used to convert string to lower case
         //ToUpper()
@@ -133,6 +133,12 @@ class Program
         //String.Format is used to insert the object or variable value inside any string
         // we can replace value in specified format
         //String.Format("any string {index}", object);
+
+        //special characters in a string
+        //backslash is a scape character, double backslash to show a backslash
+        // backslash and 
+        string s1 = "this string has / and colon : ";
+        Console.WriteLine(s1); 
 
 
 
