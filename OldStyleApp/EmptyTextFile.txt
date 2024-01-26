@@ -51,3 +51,10 @@ same for variables, avoid abreviations
 
 Use nouns to name classes
     Methods are actions
+
+
+=====
+var is used for implicit typed variables
+ex: var number = 1; they must be assigned and cannot be overwritten with other data types, they cannot be null neither
+
+

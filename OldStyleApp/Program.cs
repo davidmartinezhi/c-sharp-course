@@ -3,10 +3,22 @@
 namespace OldStyleApp;
 class Program
 {
+
+    //here i declare constants
+    //constants as fields
+    //constants are inmutable
+    const double PI = 3.1415926;
+    const int weeks = 12;
+    const int months = 12;
+    const string birthday = "21 January 2000";
+
+
+
     // static es que podemos llamar el metodo sin instanciar la clase
     // void es porque no regresa ningún valor
     static void Main(string[] args)
     {
+        Console.WriteLine($"My birthday is going to always be {birthday}");
         //ParseStringToNumber();
         StringManipulation();
 
