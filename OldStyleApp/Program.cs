@@ -36,7 +36,7 @@ class Program
         //OBJECT audi of DATATYPE car and we save a new car
         //keyword key allocates memory in the heap for the new object
         //audi has a reference to the location where our car is stored
-        Car audi = new Car("Audi A4");
+        Car audi = new Car("Audi A4", 250);
         audi.Details();
 
         Car bmw = new Car("BMW M5", 350, "blue");
@@ -194,7 +194,6 @@ class Program
         Console.Read();
     }
 
-
     public static void UsingInput()
     {
         /*
@@ -223,7 +222,6 @@ class Program
 
         Console.Read();
     }
-
 
     public static void TryCatchAndFinally()
     {

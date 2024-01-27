@@ -9,9 +9,26 @@ namespace OldStyleApp
 		private int _hp;
 		private string _color;
 
-		public Car(string name, int hp = 0, string color="black") //constructor
+		//Constructors
+		public Car() //default
 		{
-			_name = name;
+			_name = "Car";
+			_hp = 100;
+			_color = "red";
+		}
+
+		
+        public Car(string name, int hp = 0) //full specification constructor
+        {
+            _name = name;
+            Console.WriteLine(name.ToUpper() + " WAS CONSTRUCTED!");
+            _hp = hp;
+            _color = "red";
+        }
+
+        public Car(string name, int hp = 0, string color="black") //partial specification
+		{
+            _name = name;
 			Console.WriteLine(name.ToUpper() + " WAS CONSTRUCTED!");
 			_hp = hp;
 			_color = color;
