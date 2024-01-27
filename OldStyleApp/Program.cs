@@ -33,6 +33,16 @@ class Program
         //SwitchCondition();
 
 
+        //OBJECT audi of DATATYPE car and we save a new car
+        //keyword key allocates memory in the heap for the new object
+        //audi has a reference to the location where our car is stored
+        Car audi = new Car();
+        Car bmw = new Car();
+        audi.Drive();
+        audi.Stop();
+
+
+
     }
 
     //access modifier (static) return type method name (parameter 1, parameter 2)
