@@ -38,12 +38,15 @@ class Program
         //OBJECT audi of DATATYPE car and we save a new car
         //keyword key allocates memory in the heap for the new object
         //audi has a reference to the location where our car is stored
-        //Car audi = new Car("Audi A4", 250);
+        Car audi = new Car("Audi A4", 250);
         //audi.Name = "audi a3";
         //audi.Details();
         //audi.Name = "   ";
         //audi.Details();
         //Console.WriteLine(audi.Name);
+
+        audi.MaxSpeed = 10;
+        Console.WriteLine(audi.MaxSpeed);
 
 
 
