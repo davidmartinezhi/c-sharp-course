@@ -26,12 +26,10 @@ namespace OldStyleApp
 			} //set accessor
 		}
 
-
-		public int MaxSpeed //this creates a private anonymous field for maxSpeed
-		{
-			get;
-			set;
-		}
+		//this creates a private anonymous field for maxSpeed
+		// read only
+		public int MaxSpeed { get; } = 10;
+		//for write only we just write set as _maxSpeed = value
 
 		//Constructors
 		public Car() //default
