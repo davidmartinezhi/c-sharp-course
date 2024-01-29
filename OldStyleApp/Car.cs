@@ -28,10 +28,11 @@ namespace OldStyleApp
 
         public Car(string name, int hp = 0, string color="black") //partial specification
 		{
-            _name = name;
+			//así se utiliza el this
+            this._name = name;
 			Console.WriteLine(name.ToUpper() + " WAS CONSTRUCTED!");
-			_hp = hp;
-			_color = color;
+            this._hp = hp;
+            this._color = color;
 		}
 
 		//Member method
