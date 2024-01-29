@@ -10,6 +10,22 @@ namespace OldStyleApp
 		private int _hp;
 		private string _color;
 
+		//public property
+		//property can be used in struct and interfaces also
+		public string Name {
+			get { return _name; } // get accessor
+			set
+			{
+				if (value.Trim() == "")
+				{
+					_name = "Default Name";
+				}
+				else{
+                    _name = value;
+                }
+			} //set accessor
+		}
+
 		//Constructors
 		public Car() //default
 		{
@@ -17,7 +33,6 @@ namespace OldStyleApp
 			_hp = 100;
 			_color = "red";
 		}
-
 		
         public Car(string name, int hp = 0) //full specification constructor
         {
@@ -51,47 +66,6 @@ namespace OldStyleApp
 		{
 			Console.WriteLine($"The car {_name} has {_hp} horse power and is of color {_color}.");
 		}
-
-        //Name set/get
-		public void SetName(string name)
-		{
-			//we instill our own rules for the input
-			//check input
-			if(name == "")
-			{
-				_name = "DefaultName";
-				return;
-			}
-			_name = name;
-		}
-
-        public string GetName()
-        {
-            // we can make our own rules on what to return
-            return _name + " car";
-        }
-
-        //Horse power set/get
-        public void SetHp(int hp)
-        {
-            _hp = hp;
-        }
-
-        public int GetHp()
-        {
-            return _hp;
-        }
-
-        //Color set/get
-        public void SetColor(string color)
-        {
-            _color = color;
-        }
-
-        public string GetColor()
-        {
-            return _color;
-        }
     }
 }
 
