@@ -51,6 +51,47 @@ namespace OldStyleApp
 		{
 			Console.WriteLine($"The car {_name} has {_hp} horse power and is of color {_color}.");
 		}
-	}
+
+        //Name set/get
+		public void setName(string name)
+		{
+			//we instill our own rules for the input
+			//check input
+			if(name == "")
+			{
+				_name = "DefaultName";
+				return;
+			}
+			_name = name;
+		}
+
+        public string getName()
+        {
+            // we can make our own rules on what to return
+            return _name + " car";
+        }
+
+        //Horse power set/get
+        public void setHp(int hp)
+        {
+            _hp = hp;
+        }
+
+        public int getHp()
+        {
+            return _hp;
+        }
+
+        //Color set/get
+        public void setColor(string color)
+        {
+            _color = color;
+        }
+
+        public string getColor()
+        {
+            return _color;
+        }
+    }
 }
 
