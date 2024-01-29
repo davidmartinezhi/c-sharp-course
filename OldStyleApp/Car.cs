@@ -53,7 +53,7 @@ namespace OldStyleApp
 		}
 
         //Name set/get
-		public void setName(string name)
+		public void SetName(string name)
 		{
 			//we instill our own rules for the input
 			//check input
@@ -65,30 +65,30 @@ namespace OldStyleApp
 			_name = name;
 		}
 
-        public string getName()
+        public string GetName()
         {
             // we can make our own rules on what to return
             return _name + " car";
         }
 
         //Horse power set/get
-        public void setHp(int hp)
+        public void SetHp(int hp)
         {
             _hp = hp;
         }
 
-        public int getHp()
+        public int GetHp()
         {
             return _hp;
         }
 
         //Color set/get
-        public void setColor(string color)
+        public void SetColor(string color)
         {
             _color = color;
         }
 
-        public string getColor()
+        public string GetColor()
         {
             return _color;
         }

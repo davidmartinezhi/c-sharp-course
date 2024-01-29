@@ -44,10 +44,10 @@ class Program
         Car bmw = new Car("BMW M5", 350, "blue");
         bmw.Details();
 
-        audi.setName("");
+        audi.SetName("");
         audi.Details();
 
-        Console.WriteLine(audi.getName());
+        Console.WriteLine(audi.GetName());
 
 
     }
