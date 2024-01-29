@@ -5,6 +5,7 @@ namespace OldStyleApp
 	{
 
         //Member variable
+		//Access modifier private
         private string _name; //private field
 		private int _hp;
 		private string _color;

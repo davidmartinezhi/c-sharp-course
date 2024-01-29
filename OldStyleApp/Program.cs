@@ -4,6 +4,8 @@
  * https://cheatography.com/laurence/cheat-sheets/c/
 */
 
+// for code snippets press tab twice
+
 namespace OldStyleApp;
 class Program
 {
@@ -46,7 +48,6 @@ class Program
         audi.Drive();
         bmw.Drive();
         audi.Stop();
-
 
 
     }

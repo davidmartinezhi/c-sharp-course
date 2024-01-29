@@ -1,1 +1,10 @@
 ﻿
+Access mofifiers
+
+this helps with encapsulatoin and helps with data integrity by only changing it through certain ways
+it applies abstraction hides internal implementation and reduce complecity
+
+    private: only class can access that data
+    public: anyone can access it
+    protected: only children can have it
+    
