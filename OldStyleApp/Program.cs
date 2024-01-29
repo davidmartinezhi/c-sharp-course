@@ -38,7 +38,7 @@ class Program
         //OBJECT audi of DATATYPE car and we save a new car
         //keyword key allocates memory in the heap for the new object
         //audi has a reference to the location where our car is stored
-        Car audi = new Car("Audi A4", 250);
+        //Car audi = new Car("Audi A4", 250);
         //audi.Name = "audi a3";
         //audi.Details();
         //audi.Name = "   ";
@@ -46,14 +46,17 @@ class Program
         //Console.WriteLine(audi.Name);
 
         //audi.MaxSpeed = 10;
-        Console.WriteLine(audi.MaxSpeed);
+        //Console.WriteLine(audi.MaxSpeed);
 
+        Members member1 = new Members();
+        member1.Introducing(false);
+        member1.Introducing(true);
 
-
+        Console.ReadKey();
 
 
     }
-
+    
     //access modifier (static) return type method name (parameter 1, parameter 2)
     //static is it refers to the class itself, not the object
     public static void WriteSomething()
@@ -199,11 +202,7 @@ class Program
 
     public static void UsingInput()
     {
-        /*
-        string input = Console.ReadLine();
-        Console.WriteLine(input);
-        Console.Read();
-        */
+
 
         //get inputs
         Console.Write("Type a number: ");
@@ -363,6 +362,7 @@ class Program
         //can chain line a ? b : c ? d : e -> a ? b : (c ? d : e)
         Console.WriteLine("Sames as in javascript/typescript, method contains notes");
     }
+    
 
 }
 
