@@ -30,5 +30,5 @@ Puedes tener distintos tamaños de valores
         new int[] {1,2,3,4}
     }
 
-Changes to array in a function changes the original array, they are passed by reference.
+Changes to array in a function changes the original array, they are passed by reference. array is a reference type
     

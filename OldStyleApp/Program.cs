@@ -52,7 +52,16 @@ class Program
         //member1.Introducing(false);
         //member1.Introducing(true);
 
-        ForLoops();
+        //ForLoops();
+        //ParamsMethod("this", " is", " a", " string");
+
+        //int price = 50;
+        //float pi = 3.14f;
+        //char at = '@';
+        //string book = "the hobbit";
+        //ParamsMethod2(price, pi, at, book);
+        //ParamsMethod2("hello", 5.3, "$");
+        ParamsExample(6,4,8,10,1,5);
 
         Console.ReadKey();
 
@@ -378,9 +387,44 @@ class Program
         {
             Console.WriteLine(k);
         }
-
-
     }
+
+    //we can pass as many parameters as we want with this keyword
+    public static void ParamsMethod(params string[] sentence)
+    {
+        for (int i = 0; i < sentence.Length; i++)
+        {
+            Console.Write(sentence[i]);
+        }
+    }
+
+    /*
+     why params? for input where we can have multiple values, to create flexible methods
+     it can only be used with the last parameter of a function, it can also impact performance
+     */
+    public static void ParamsMethod2(params object[] stuff)
+    {
+        //every object class has inherited the method ToString()
+        foreach (Object obj in stuff)
+        {
+            //print object followed by a space
+            Console.Write(obj + " ");
+        }
+    }
+
+    public static void ParamsExample(params int[] numbers)
+    {
+        int minVal = int.MaxValue;
+
+        //every object class has inherited the method ToString()
+        foreach (int num in numbers)
+        {
+            minVal = Math.Min(num, minVal);
+        }
+
+        Console.WriteLine("Min Value: " + minVal);
+    }
+
 
 }
 
