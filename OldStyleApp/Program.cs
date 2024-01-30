@@ -48,9 +48,11 @@ class Program
         //audi.MaxSpeed = 10;
         //Console.WriteLine(audi.MaxSpeed);
 
-        Members member1 = new Members();
-        member1.Introducing(false);
-        member1.Introducing(true);
+        //Members member1 = new Members();
+        //member1.Introducing(false);
+        //member1.Introducing(true);
+
+        ForLoops();
 
         Console.ReadKey();
 
@@ -362,7 +364,23 @@ class Program
         //can chain line a ? b : c ? d : e -> a ? b : (c ? d : e)
         Console.WriteLine("Sames as in javascript/typescript, method contains notes");
     }
-    
+
+    public static void ForLoops()
+    {
+        int[] nums = new int[10];
+
+        for(int i = 0; i < nums.Length; i++)
+        {
+            nums[i] = i;
+        }
+
+        foreach(int k in nums)
+        {
+            Console.WriteLine(k);
+        }
+
+
+    }
 
 }
 

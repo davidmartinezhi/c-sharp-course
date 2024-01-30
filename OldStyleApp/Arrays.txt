@@ -9,3 +9,26 @@
     int[] grades = new int[] {7,7,8,9,10};
 
     use property .Length for size
+
+Declare multiple-D array
+int[,] -> 2d
+int[,,] -> 3d
+
+method .Rank gives us the number of dimentions of the array
+
+Jagged Arrays, array of arrays
+Puedes tener distintos tamaños de valores
+    int[][] jaggedArray = new int[3][]; array of 3 rows that contain array
+    jaggedArray[0] = new int[5]; we say how many values on each row, it can also be initialized in ohter ways
+    jaggedArray[1] = new int[3];
+    jaggedArray[2] = new int[2];
+
+    or
+
+    int[][] jaggedArray = new int[][]{
+        new int[] {1,2,3},
+        new int[] {1,2,3,4}
+    }
+
+Changes to array in a function changes the original array, they are passed by reference.
+    

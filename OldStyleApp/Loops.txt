@@ -1,6 +1,6 @@
 ﻿
 4 Kind of Loops
-For loop (same as in c++)
-While loop (same as in c++)
+For loop (same as in c++), for control over iteration process
+While loop (same as in c++), when you dont know how many times to loop
 Do while (same as in c++) do{this}while(codition), runs at least once
-ForEach. runs through array as long a there is content
+ForEach. runs through array as long a there is content, when needed to traverse objects but dont need index
