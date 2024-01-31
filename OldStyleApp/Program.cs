@@ -540,7 +540,7 @@ class Program
         //Dictionary is collection of key value pairs, is a struct
         //KeyValuePair <TKey, TValue>
 
-        Dictionary<int, string> ht = new Dictionary<int, string>() { {1,"one" }, { 2, "two" } };
+        Dictionary<int, string> ht = new Dictionary<int, string>() { { 1, "one" }, { 2, "two" } };
         //works the same as Hashtable
 
         //we can use TryGetValue(key, out variableToStore), works as try pase, we get a boolean value
@@ -553,22 +553,33 @@ class Program
 
         //we can traverse dictionary with for loop and get KeyValuePair data with ElementAt()
         //there is always an number attached to a key
-        for (int i = 0; i < dict.Count; i++){
+        for (int i = 0; i < dict.Count; i++) {
             KeyValuePair<int, Car> keyValPair = dict.ElementAt(i);
             Car carValue = keyValPair.Value;
             carValue.Details();
 
         }
 
+        //edit a dictionary
+        int key = 1;
+        if (dict.ContainsKey(key)) //if it contains key, we update it
+        {
+            dict[key] = new Car("newCar1", 300);
+        }
+
+        dict[key].Details();
 
 
-
-
-
-
-
-
-
+        //remove item from dictionary
+        int keyToRemove = 2;
+        if (dict.Remove(keyToRemove))
+        {
+            Console.WriteLine("Car was removed!");
+        }
+        else
+        {
+            Console.WriteLine("That key does not exists in dict.");
+        }
 
     }
 
