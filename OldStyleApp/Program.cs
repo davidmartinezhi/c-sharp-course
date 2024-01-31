@@ -70,8 +70,6 @@ class Program
         CollectionsExamples();
 
         Console.ReadKey();
-
-
     }
     
     //access modifier (static) return type method name (parameter 1, parameter 2)
@@ -557,7 +555,6 @@ class Program
             KeyValuePair<int, Car> keyValPair = dict.ElementAt(i);
             Car carValue = keyValPair.Value;
             carValue.Details();
-
         }
 
         //edit a dictionary
@@ -597,13 +594,20 @@ class Program
         Console.WriteLine("Stack is empty");
 
         Console.WriteLine("===========QUEUE===========");
+        Queue<int> queue = new Queue<int>();
 
+        //add items
+        queue.Enqueue(1);
+        queue.Enqueue(2);
+        queue.Enqueue(3);
 
-
-
+        while(queue.Count > 0)
+        {
+            Console.WriteLine(queue.Peek());
+            queue.Dequeue();
+        }
+        Console.WriteLine("Queue is empty");
 
     }
-
-
 }
 
