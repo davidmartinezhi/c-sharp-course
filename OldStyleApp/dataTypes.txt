@@ -58,3 +58,24 @@ var is used for implicit typed variables
 ex: var number = 1; they must be assigned and cannot be overwritten with other data types, they cannot be null neither
 
 
+=====
+Generic and non-generic collections
+Classes we can use to store collection of objects, they are not fixed in size. instead of length we use count
+
+Non generic
+    Can store any type of objects
+    Are in System.Collections namespace
+
+    - ArrayList
+        ex. ArrayList ex = new ArrayList();
+            ex.Add(1);
+            x.Add("hey");
+        we use foreach when traversing
+
+Generic
+    Limited to one type of objects
+    Are in System.Collections.Generic namespace
+
+    - List
+        ex. List<string> myList = new List<string>();
+

@@ -4,6 +4,9 @@
  * https://cheatography.com/laurence/cheat-sheets/c/
 */
 
+using System.Collections;
+using System.Collections.Generic;
+
 // for code snippets press tab twice
 
 namespace OldStyleApp;
@@ -61,7 +64,9 @@ class Program
         //string book = "the hobbit";
         //ParamsMethod2(price, pi, at, book);
         //ParamsMethod2("hello", 5.3, "$");
-        ParamsExample(6,4,8,10,1,5);
+        //ParamsExample(6,4,8,10,1,5);
+
+        CollectionsExamples();
 
         Console.ReadKey();
 
@@ -423,6 +428,81 @@ class Program
         }
 
         Console.WriteLine("Min Value: " + minVal);
+    }
+
+    //using collections
+    public static void CollectionsExamples()
+    {
+
+        Console.WriteLine("===========ArrayList===========");
+        //work like lists in python
+        ArrayList myArrayList = new ArrayList();
+
+        myArrayList.Add(2); //add elements
+        myArrayList.Add("hello");
+
+        myArrayList.Remove("hello"); //delete especific value
+
+        myArrayList.RemoveAt(0);//delete value at specific index, we can also removeRange
+
+        myArrayList.Add(2);
+        myArrayList.Add("hello");
+        myArrayList.Add(1.1);
+
+        Console.WriteLine(myArrayList.Count); //returns size
+
+        double sum = 0;
+
+        //can traverse depending on type
+        //object is the highest data type there is, so we can use it
+        foreach(object obj in myArrayList)
+        {
+            if(obj is int)
+            {
+                Console.WriteLine("integer");
+                sum += Convert.ToDouble(obj); //convert integer to double
+                //sum += (int)obj;
+            }
+            else if(obj is string)
+            {
+                Console.WriteLine(obj);
+            }
+            else if (obj is double)
+            {
+                Console.WriteLine("double");
+                sum += (double)obj; //cannot simply add an object to double, so we do casting
+            }
+        }
+
+        Console.WriteLine("sum: " + sum);
+
+        Console.WriteLine("===========List===========");
+        var numbers = new List<int>(); // var is implicit type variable and must be assigned when initialized
+        var numbers2 = new List<int> {1,2,3,4 }; // var is implicit type variable and must be assigned when initialized
+
+        //add values
+        numbers.Add(1);
+        numbers.Add(2);
+        numbers.Add(3);
+
+        //remove values
+        numbers.Remove(1);
+
+        //remove values at index
+        numbers.RemoveAt(0);
+
+        //emopty the list
+        numbers.Clear();
+
+        //loop with for or foreach
+
+        myArrayList.Clear(); //empties the list
+
+        Console.WriteLine("===========List===========");
+
+
+
+
     }
 
 
