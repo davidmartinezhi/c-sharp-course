@@ -6,6 +6,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 // for code snippets press tab twice
 
@@ -499,7 +500,7 @@ class Program
         myArrayList.Clear(); //empties the list
 
         Console.WriteLine("===========Hashtables===========");
-        //Itps of System.Collections
+        //Its of System.Collections
 
         Hashtable table = new Hashtable(); //initialize
         Car car1 = new Car("car1", 100);
@@ -532,6 +533,35 @@ class Program
 
         //check if key exists, use containskey method
         Console.WriteLine(table.ContainsKey("car1"));
+
+
+        Console.WriteLine("===========Dictionary===========");
+        //Its of System.Collections.Generic
+        //Dictionary is collection of key value pairs, is a struct
+        //KeyValuePair <TKey, TValue>
+
+        Dictionary<int, string> ht = new Dictionary<int, string>() { {1,"one" }, { 2, "two" } };
+        //works the same as Hashtable
+
+        //we can use TryGetValue(key, out variableToStore), works as try pase, we get a boolean value
+
+        Dictionary<int, Car> dict = new Dictionary<int, Car>();
+        dict.Add(1, car1);
+        dict.Add(2, car2);
+        dict.Add(3, car3);
+
+
+        //we can traverse dictionary with for loop and get KeyValuePair data with ElementAt()
+        //there is always an number attached to a key
+        for (int i = 0; i < dict.Count; i++){
+            KeyValuePair<int, Car> keyValPair = dict.ElementAt(i);
+            Car carValue = keyValPair.Value;
+            carValue.Details();
+
+        }
+
+
+
 
 
 
