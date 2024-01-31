@@ -68,7 +68,8 @@ class Program
         //ParamsExample(6,4,8,10,1,5);
 
         //CollectionsExamples();
-        InheritanceExample();
+        //InheritanceExample();
+        OverrideExample();
 
 
 
@@ -628,6 +629,15 @@ class Program
         myTV.WatchTV();
         myTV.SwitchOff();
         myTV.WatchTV();
+    }
+
+    public static void OverrideExample()
+    {
+        Dog dog = new Dog("Sif", 50);
+        Console.WriteLine($"{dog.Name} is {dog.Age} years old.");
+        dog.MakeSound();
+        dog.Play();
+        dog.Eat();
     }
 }
 
