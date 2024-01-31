@@ -581,6 +581,27 @@ class Program
             Console.WriteLine("That key does not exists in dict.");
         }
 
+
+        Console.WriteLine("===========STACK===========");
+        Stack<int> stack = new Stack<int>();
+        stack.Push(1);
+        stack.Push(2);
+        Console.WriteLine(stack.Peek());
+        stack.Pop();
+        stack.Push(3);
+
+        while (stack.Count > 0)
+        {
+            stack.Pop();
+        }
+        Console.WriteLine("Stack is empty");
+
+        Console.WriteLine("===========QUEUE===========");
+
+
+
+
+
     }
 
 

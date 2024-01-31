@@ -82,5 +82,15 @@ Generic
         ex. List<string> myList = new List<string>();
 
     - Dictionary
-        
+
+
+    - Stack
+        push
+        pop
+        peek
+
+    - Queue
+        enqueue, add data to queue
+        deque, remove data from front
+        peek, see data at front
 
