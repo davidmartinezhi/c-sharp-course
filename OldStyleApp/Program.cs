@@ -68,6 +68,7 @@ class Program
         //ParamsExample(6,4,8,10,1,5);
 
         //CollectionsExamples();
+        InheritanceExample();
 
 
 
@@ -610,6 +611,23 @@ class Program
         }
         Console.WriteLine("Queue is empty");
 
+    }
+
+    //inheritance
+    public static void InheritanceExample()
+    {
+        Radio myRadio = new Radio(false, "Sony");
+        //Console.WriteLine(myRadio.Brand);
+        myRadio.SwitchOn();
+        myRadio.ListenRadio();
+        myRadio.SwitchOff();
+        myRadio.ListenRadio();
+
+        TV myTV = new TV(false, "Samsung");
+        myTV.SwitchOn();
+        myTV.WatchTV();
+        myTV.SwitchOff();
+        myTV.WatchTV();
     }
 }
 

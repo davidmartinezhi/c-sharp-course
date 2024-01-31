@@ -18,3 +18,9 @@ Readonly aplica para inmutable data como cumpleaños o computed data
 
 write only puede ser para sensitive data que debe ingresarse pero no aparecer en la aplicación
 
+===========
+Inheritance
+    -Define a class in terms of other class
+    -take functinoality from one class and construct from it
+
+    
