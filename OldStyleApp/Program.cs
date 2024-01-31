@@ -455,15 +455,15 @@ class Program
 
         //can traverse depending on type
         //object is the highest data type there is, so we can use it
-        foreach(object obj in myArrayList)
+        foreach (object obj in myArrayList)
         {
-            if(obj is int)
+            if (obj is int)
             {
                 Console.WriteLine("integer");
                 sum += Convert.ToDouble(obj); //convert integer to double
                 //sum += (int)obj;
             }
-            else if(obj is string)
+            else if (obj is string)
             {
                 Console.WriteLine(obj);
             }
@@ -478,7 +478,7 @@ class Program
 
         Console.WriteLine("===========List===========");
         var numbers = new List<int>(); // var is implicit type variable and must be assigned when initialized
-        var numbers2 = new List<int> {1,2,3,4 }; // var is implicit type variable and must be assigned when initialized
+        var numbers2 = new List<int> { 1, 2, 3, 4 }; // var is implicit type variable and must be assigned when initialized
 
         //add values
         numbers.Add(1);
@@ -498,7 +498,44 @@ class Program
 
         myArrayList.Clear(); //empties the list
 
-        Console.WriteLine("===========List===========");
+        Console.WriteLine("===========Hashtables===========");
+        //Itps of System.Collections
+
+        Hashtable table = new Hashtable(); //initialize
+        Car car1 = new Car("car1", 100);
+        Car car2 = new Car("car2", 150);
+        Car car3 = new Car("car3", 200);
+
+        table.Add(car1.Name, car1); //add k-v pairs
+        table.Add(car2.Name, car2);
+        table.Add(car3.Name, car3);
+
+        Car storedCar = (Car)table[car2.Name]; //we cast the object as car, we return individual item by key value
+
+        storedCar.Details();
+
+        //retireve all values from hashtable
+        //hashtable is collection of dictionary entries
+        foreach (DictionaryEntry entry in table) //entries are of type Dictionary entry
+        {
+            Car temp = (Car)entry.Value; //we can also get key and other things
+
+            Console.WriteLine(temp.Name);
+            temp.Details();
+        }
+
+        foreach (Car value in table.Values)
+        {
+            Console.WriteLine(value.Name);
+            value.Details();
+        }
+
+        //check if key exists, use containskey method
+        Console.WriteLine(table.ContainsKey("car1"));
+
+
+
+
 
 
 
