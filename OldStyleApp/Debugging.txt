@@ -1,0 +1,17 @@
+﻿Auto shows the variables in our breakpints and their values
+    - very handy to look at values
+    - we can modify values
+
+Breakpoints work the same as in VSCode
+
+Watch
+    - add specific items you want to look at
+
+Local
+    - shows variables in the local scope we are at
+
+Callstack
+    - shows order of calls, all the way up to the initial call, to track the behaviour
+
+We can throw error like:
+    throw new ArgumentOutOfRangeException("variable of problem", "reason/message");

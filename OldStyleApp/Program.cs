@@ -67,7 +67,9 @@ class Program
         //ParamsMethod2("hello", 5.3, "$");
         //ParamsExample(6,4,8,10,1,5);
 
-        CollectionsExamples();
+        //CollectionsExamples();
+
+
 
         Console.ReadKey();
     }

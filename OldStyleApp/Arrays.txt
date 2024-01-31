@@ -32,3 +32,19 @@ Puedes tener distintos tamaños de valores
 
 Changes to array in a function changes the original array, they are passed by reference. array is a reference type
     
+To pass by reference explicitly we user ref:
+    void ModifyReference(ref List<int> myList) { <---
+        // This change will affect the reference itself.
+        myList = new List<int> {1, 2, 3};
+    }
+
+We should create a "buffer"
+
+    void ModifyReference(ref List<int> myList) {
+        List<int> buffer = new List<int>(myList);  <---
+
+        // This change will affect the reference itself.
+        myList = new List<int> {1, 2, 3};
+    }
+
+
