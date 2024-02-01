@@ -28,4 +28,20 @@ Interface
     -Is like a contract, a class that implements an interface agrees to define implementation for all things defined by the interface
     - contract terms methods and properties, implementation depends on the classes
 
+Interfaces are of good use when inheritance doe not apply and you want to mantain certain functionalities
+    -csharp is single inheritance language
+    - for interfaces, they start with I , ex. IDestroyor IDog
+
+    Interfaces contitutes declareation of intentions, what your class will be able to do
+    it helps with
+        _ code readability
+        - code semantics, separating concepts
+        - code maintainability. reduce coupling, and helps interchange implementations for the same concept
+        - design patterns, bigger picture of abstraction, complex system architecture and human comprensitvity
+        - multi inheritance, gateway to multiple inheritance.
+
+
+
+    for example if different objects need to get destroyed in a game, even if they are not related
+    So we have interface destroy that helps us dont miss this functionality on any of those objects
     
