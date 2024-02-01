@@ -669,12 +669,53 @@ class Program
 
     }
 
+    public interface IShootable
+    {
+        void Shoot();
+    }
+
+    public class Weapon
+    {
+        public string Name { get; protected set; }
+
+        public Weapon(string name)
+        {
+            this.Name = name;
+        }
+
+        public void Label()
+        {
+            Console.WriteLine($"This is {Name}!");
+        }
+    }
+
+    public class Gun : Weapon, IShootable
+    {
+
+        public Gun() : base("Gun") { }
+
+        public void Shoot()
+        {
+            Console.WriteLine("Bang!");
+        }
+    }
 
     public static void InterfaceDemo()
     {
         //Ticket t1 = new Ticket(10);
         //Ticket t2 = new Ticket(6);
         //Console.WriteLine(t1.Equals(t2));
+
+        // new instance 
+        Gun pist = new Gun();
+
+        // test for methods
+        pist.Label();
+        pist.Shoot();
+
+        // verifying the interface and the parent class
+        if (pist is IShootable && pist is Weapon)
+            System.Console.WriteLine("Yes, it is my parents.");
 
 
     }

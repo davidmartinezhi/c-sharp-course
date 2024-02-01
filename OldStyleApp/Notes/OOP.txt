@@ -44,4 +44,7 @@ Interfaces are of good use when inheritance doe not apply and you want to mantai
 
     for example if different objects need to get destroyed in a game, even if they are not related
     So we have interface destroy that helps us dont miss this functionality on any of those objects
+
+    IEnumerable and IEnumerator
+    
     
