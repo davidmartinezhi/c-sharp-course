@@ -46,5 +46,24 @@ Interfaces are of good use when inheritance doe not apply and you want to mantai
     So we have interface destroy that helps us dont miss this functionality on any of those objects
 
     IEnumerable and IEnumerator
-    
-    
+
+IEnumerable
+    - recomended to use when the db represents a massive database table
+    - not recommended when you need result right away , and are possibly mutating or editing the object later on
+    - its the base collection for many collections in csharp, it provides a way to iterate though a collection
+    - when implemented a class becomes countable
+
+    - contains a single method you must implement when using this interface
+    - GetEnumerator(), returns IEnumerator<T> object.
+        - This ienumerator provides the ability to iterate through the collection by exposing a current property that points at the object we are at in the collection
+
+
+    2 versions
+        - one for generic collections: IEnumerable<T>
+        - one for non generic collections: IEnumerable, this needs conversions of data types boxing and unboxing
+
+    For method, having a Dog type list:
+        IEnumerator<Dog> IEnumerable<Dog>.GetEnumerator()
+        {
+            return dogs.GetEnumerator();
+        }
