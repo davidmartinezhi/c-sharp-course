@@ -23,4 +23,9 @@ Inheritance
     -Define a class in terms of other class
     -take functinoality from one class and construct from it
 
+===========
+Interface
+    -Is like a contract, a class that implements an interface agrees to define implementation for all things defined by the interface
+    - contract terms methods and properties, implementation depends on the classes
+
     

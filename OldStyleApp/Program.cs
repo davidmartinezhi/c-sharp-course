@@ -70,7 +70,9 @@ class Program
         //CollectionsExamples();
         //InheritanceExample();
         //OverrideExample();
-        OOPExercise();
+        //OOPExercise();
+
+        InterfaceDemo();
 
 
 
@@ -665,6 +667,14 @@ class Program
 
 
 
+    }
+
+
+    public static void InterfaceDemo()
+    {
+        Ticket t1 = new Ticket(10);
+        Ticket t2 = new Ticket(6);
+        Console.WriteLine(t1.Equals(t2));
     }
 }
 
