@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace OldStyleApp
 {
 	public class ElectricalDevice
@@ -20,6 +21,12 @@ namespace OldStyleApp
         public void SwitchOff()
         {
             IsOn = false;
+        }
+
+        //Modify to string method of base class
+        public override string ToString()
+        {
+            return string.Format($"Brand: {Brand}, Is on? {IsOn}");
         }
 
     }

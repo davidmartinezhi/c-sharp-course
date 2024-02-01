@@ -42,6 +42,13 @@ namespace OldStyleApp
             Console.WriteLine($"{Name} is playing.");
             IsHungry = true; // Playing might make the animal hungry
         }
+
+        //Modify to string method of base class
+        public override string ToString()
+        {
+            string hunger = IsHungry ? "" : "not ";
+            return string.Format($"{Name} is {Age} years old and is {hunger}hungry");
+        }
     }
 }
 

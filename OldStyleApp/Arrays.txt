@@ -31,6 +31,7 @@ Puedes tener distintos tamaños de valores
     }
 
 Changes to array in a function changes the original array, they are passed by reference. array is a reference type
+Structs wont be reference type, only through ref, maybe
     
 To pass by reference explicitly we user ref:
     void ModifyReference(ref List<int> myList) { <---

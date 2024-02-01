@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace OldStyleApp
 {
 	public class TV : ElectricalDevice

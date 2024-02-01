@@ -69,7 +69,8 @@ class Program
 
         //CollectionsExamples();
         //InheritanceExample();
-        OverrideExample();
+        //OverrideExample();
+        OOPExercise();
 
 
 
@@ -629,6 +630,7 @@ class Program
         myTV.WatchTV();
         myTV.SwitchOff();
         myTV.WatchTV();
+        Console.WriteLine(myTV.ToString());
     }
 
     public static void OverrideExample()
@@ -638,6 +640,17 @@ class Program
         dog.MakeSound();
         dog.Play();
         dog.Eat();
+        Console.WriteLine(dog.ToString());
+
+        
+    }
+
+    public static void OOPExercise()
+    {
+        Post post1 = new Post("Thanks for the birthday wishes", true, "Denis Panjuta");
+        Console.WriteLine(post1.ToString());
+
+
     }
 }
 
