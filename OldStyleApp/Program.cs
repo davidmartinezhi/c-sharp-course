@@ -650,6 +650,12 @@ class Program
         Post post1 = new Post("Thanks for the birthday wishes", true, "Denis Panjuta");
         Console.WriteLine(post1.ToString());
 
+        ImagePost imagePost1 = new ImagePost("Check out my new shoes", "Denis Panjuta", "https://images.com/shoes", true);
+        Console.WriteLine(imagePost1.ToString());
+
+
+        VideoPost videoPost1 = new VideoPost("Check out my new shoes", "Denis Panjuta", "https://video.com/shoes", 120 , true);
+        Console.WriteLine(videoPost1.ToString());
 
     }
 }
