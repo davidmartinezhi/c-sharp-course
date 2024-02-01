@@ -6,7 +6,10 @@ namespace OldStyleApp
 		public string ImageURL { get; set; }
 
 		//default constructor of base class is called implicitly
-		public ImagePost(){}
+		public ImagePost(): base()
+		{
+            this.ImageURL = "";
+        }
 
 		public ImagePost(string title, string sendByUsername, string imageURL, bool isPublic): base(title, isPublic, sendByUsername)
 		{

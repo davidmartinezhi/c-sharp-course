@@ -654,8 +654,16 @@ class Program
         Console.WriteLine(imagePost1.ToString());
 
 
-        VideoPost videoPost1 = new VideoPost("Check out my new shoes", "Denis Panjuta", "https://video.com/shoes", 120 , true);
+        VideoPost videoPost1 = new VideoPost("Check out my new shoes", "Denis Panjuta", "https://video.com/shoes", 12 , true);
         Console.WriteLine(videoPost1.ToString());
+
+
+        videoPost1.Play();
+        Console.WriteLine("Press any key to stop the video");
+        Console.ReadKey();
+        videoPost1.Stop();
+
+
 
     }
 }
