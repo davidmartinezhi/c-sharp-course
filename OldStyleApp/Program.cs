@@ -806,7 +806,19 @@ class Program
         Animal animal2 = cat2; //now i can use the methods of base class, the ones without the new keyword
 
         //new keyword helps to assign a method to a derived class with same name as one in your parent class,
-            // but we dont want it to participate in a virtual invocation
+        // but we dont want it to participate in a virtual invocation
+
+        //we use the sealed keyword to avoid a method being replaced
+
+
+        //----
+        animalsList[0].SetAnimalIDInfo(123, "David");
+        animalsList[1].SetAnimalIDInfo(234, "David");
+
+        animalsList[0].GetAnimalIdInfo();
+        animalsList[1].GetAnimalIdInfo();
+
+
     }
 
 }

@@ -67,3 +67,19 @@ IEnumerable
         {
             return dogs.GetEnumerator();
         }
+
+Polymorphism
+
+virtual allows to overraid
+seal does not allow to overraid to child classes, we can also seal classes son no other class can inherit from it
+new replaces a method from base class with the one in current class with the same name
+
+
+----
+Relationships
+in inheritance the child has a relation is a. BMW is a Car
+
+we can have aditional info
+    we can create classes just like CarIDInfo and be a "Has A" relationship
+
+

@@ -10,6 +10,20 @@ namespace OldStyleApp
         public int Age { get; set; }
         public bool IsHungry { get; set; }
 
+        //Has A Relationship
+        protected AnimalIdInfo animalIdInfo = new AnimalIdInfo();
+
+        public void SetAnimalIDInfo(int idNum, string owner)
+        {
+            animalIdInfo.IDNum = idNum;
+            animalIdInfo.Owner = owner;
+        }
+
+        public void GetAnimalIdInfo()
+        {
+            Console.WriteLine($"The animal has the id of {this.animalIdInfo.IDNum} and is owned by {this.animalIdInfo.Owner}");
+        }
+
         // Constructor
         public Animal(string name, int age)
         {
