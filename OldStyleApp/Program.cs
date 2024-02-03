@@ -840,6 +840,22 @@ class Program
         {
             shape.GetInfo();
             Console.WriteLine($"{shape.Name} has a volume of {shape.Volume()}");
+
+            Cube iceCube = shape as Cube; //if it cannot be cube it will be null
+
+            if(iceCube == null)
+            {
+                Console.WriteLine("THIS SHAPE IS NOT A CUBE");
+            }
+
+            //Se puede checar type de este modo
+            if(shape is Cube)
+            {
+                Console.WriteLine("THIS SHAPE IS A CUBE");
+            }
+
+            object cube2 = new Cube(4);
+            Cube cube3 = (Cube)cube2; //it will cast the object into a cube if object is a cube
         }
     }
 
