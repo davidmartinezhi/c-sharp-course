@@ -73,23 +73,15 @@ class Program
         //OOPExercise();
 
         //InterfaceDemo();
+        //IEnumerableDemo();
+        IEnumerableDemo2();
 
-        //IEnumerable is the base of collections and we can have different type of collections here
-        //because all their child classes follows its properties and methods
-        IEnumerable<int> unknownCollection; 
-        unknownCollection = GetCollection(1);
-        foreach (int num in unknownCollection) Console.WriteLine(num);
 
-        unknownCollection = GetCollection(2);
-        foreach (int num in unknownCollection) Console.WriteLine(num);
-
-        unknownCollection = GetCollection(5);
-        foreach (int num in unknownCollection) Console.WriteLine(num);
 
 
         Console.ReadKey();
     }
-    
+
     //access modifier (static) return type method name (parameter 1, parameter 2)
     //static is it refers to the class itself, not the object
     public static void WriteSomething()
@@ -224,7 +216,7 @@ class Program
         //backslash is a scape character, double backslash to show a backslash
         // backslash and 
         string s1 = "this string has / and colon : ";
-        Console.WriteLine(s1); 
+        Console.WriteLine(s1);
 
 
 
@@ -293,7 +285,7 @@ class Program
         }
         finally //this code is always executed whenever try and catch are done. Its cool for example to close connections
         {
-            
+
             Console.WriteLine("This is called always");
         }
 
@@ -400,12 +392,12 @@ class Program
     {
         int[] nums = new int[10];
 
-        for(int i = 0; i < nums.Length; i++)
+        for (int i = 0; i < nums.Length; i++)
         {
             nums[i] = i;
         }
 
-        foreach(int k in nums)
+        foreach (int k in nums)
         {
             Console.WriteLine(k);
         }
@@ -619,7 +611,7 @@ class Program
         queue.Enqueue(2);
         queue.Enqueue(3);
 
-        while(queue.Count > 0)
+        while (queue.Count > 0)
         {
             Console.WriteLine(queue.Peek());
             queue.Dequeue();
@@ -655,7 +647,7 @@ class Program
         dog.Eat();
         Console.WriteLine(dog.ToString());
 
-        
+
     }
 
     public static void OOPExercise()
@@ -667,7 +659,7 @@ class Program
         Console.WriteLine(imagePost1.ToString());
 
 
-        VideoPost videoPost1 = new VideoPost("Check out my new shoes", "Denis Panjuta", "https://video.com/shoes", 12 , true);
+        VideoPost videoPost1 = new VideoPost("Check out my new shoes", "Denis Panjuta", "https://video.com/shoes", 12, true);
         Console.WriteLine(videoPost1.ToString());
 
 
@@ -748,7 +740,7 @@ class Program
         if (option == 1)
         {
             return numbersList;
-        }else if(option == 2)
+        } else if (option == 2)
         {
             return numbersQueue;
         }
@@ -757,5 +749,40 @@ class Program
             return new int[] { 11, 12, 13, 14, 15 };
         }
     }
+
+    public static void IEnumerableDemo()
+    {
+        //IEnumerable is the base of collections and we can have different type of collections here
+        //because all their child classes follows its properties and methods
+        IEnumerable<int> unknownCollection;
+        unknownCollection = GetCollection(1);
+        foreach (int num in unknownCollection) Console.WriteLine(num);
+
+        unknownCollection = GetCollection(2);
+        foreach (int num in unknownCollection) Console.WriteLine(num);
+
+        unknownCollection = GetCollection(5);
+        foreach (int num in unknownCollection) Console.WriteLine(num);
+    }
+
+    static void CollectionSum(IEnumerable<int> anyCollection) //we can pass any collection that uses the IEnumerable Interface. List, Array, Queue, Stack, etc.
+    {
+        int sum = 0;
+
+        foreach (int num in anyCollection) sum += num;
+
+        Console.WriteLine($"Sum: {sum}");
+    }
+
+    //pass IEnumerable as parameter
+    public static void IEnumerableDemo2()
+    {
+        List<int> numbersList = new List<int>() { 1, 2, 3, 4, 5 };
+        int[] numbersArray = new int[] { 6, 7, 8, 9, 10 };
+        CollectionSum(numbersList);
+        CollectionSum(numbersArray);
+
+    }
+
 }
 
