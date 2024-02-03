@@ -72,8 +72,19 @@ class Program
         //OverrideExample();
         //OOPExercise();
 
-        InterfaceDemo();
+        //InterfaceDemo();
 
+        //IEnumerable is the base of collections and we can have different type of collections here
+        //because all their child classes follows its properties and methods
+        IEnumerable<int> unknownCollection; 
+        unknownCollection = GetCollection(1);
+        foreach (int num in unknownCollection) Console.WriteLine(num);
+
+        unknownCollection = GetCollection(2);
+        foreach (int num in unknownCollection) Console.WriteLine(num);
+
+        unknownCollection = GetCollection(5);
+        foreach (int num in unknownCollection) Console.WriteLine(num);
 
 
         Console.ReadKey();
@@ -718,6 +729,33 @@ class Program
             System.Console.WriteLine("Yes, it is my parents.");
 
 
+    }
+
+    ///<summary>
+    //This method return diff type of lists depending on option
+    ///</summary>
+    static IEnumerable<int> GetCollection(int option)
+    {
+        List<int> numbersList = new List<int>() { 1, 2, 3, 4, 5 };
+
+        Queue<int> numbersQueue = new Queue<int>();
+        numbersQueue.Enqueue(6);
+        numbersQueue.Enqueue(7);
+        numbersQueue.Enqueue(8);
+        numbersQueue.Enqueue(9);
+        numbersQueue.Enqueue(10);
+
+        if (option == 1)
+        {
+            return numbersList;
+        }else if(option == 2)
+        {
+            return numbersQueue;
+        }
+        else
+        {
+            return new int[] { 11, 12, 13, 14, 15 };
+        }
     }
 }
 
