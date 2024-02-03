@@ -801,6 +801,12 @@ class Program
             //their methods are called based ont their class, not on the parent class
             Console.WriteLine(an.ToString());
         }
+
+        Cat cat2 = new Cat("tony", 10);
+        Animal animal2 = cat2; //now i can use the methods of base class, the ones without the new keyword
+
+        //new keyword helps to assign a method to a derived class with same name as one in your parent class,
+            // but we dont want it to participate in a virtual invocation
     }
 
 }
