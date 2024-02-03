@@ -6,9 +6,9 @@ namespace OldStyleApp
 
         //Member variable
 		//Access modifier private
-        private string _name; //private field
-		private int _hp;
-		private string _color;
+        protected string _name; //private field
+        protected int _hp;
+        protected string _color;
 
 		//public property
 		//property can be used in struct and interfaces also
@@ -38,7 +38,7 @@ namespace OldStyleApp
 			_hp = 100;
 			_color = "red";
 		}
-		
+
         public Car(string name, int hp = 0) //full specification constructor
         {
             _name = name;
@@ -71,6 +71,13 @@ namespace OldStyleApp
 		{
 			Console.WriteLine($"The car {_name} has {_hp} horse power and is of color {_color}.");
 		}
+
+		public void Repair()
+		{
+			Console.WriteLine("Car was repaired");
+		}
+
+
     }
 }
 

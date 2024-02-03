@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+
 namespace OldStyleApp
 {
 	public class Animal
@@ -41,6 +43,11 @@ namespace OldStyleApp
         {
             Console.WriteLine($"{Name} is playing.");
             IsHungry = true; // Playing might make the animal hungry
+        }
+
+        public void PolymorphismExample()
+        {
+            Console.WriteLine("This method is rom animal.");
         }
 
         //Modify to string method of base class

@@ -74,7 +74,9 @@ class Program
 
         //InterfaceDemo();
         //IEnumerableDemo();
-        IEnumerableDemo2();
+        //IEnumerableDemo2();
+
+        PolymorphismDemo();
 
 
 
@@ -782,6 +784,23 @@ class Program
         CollectionSum(numbersList);
         CollectionSum(numbersArray);
 
+    }
+
+    static void PolymorphismDemo()
+    {
+
+        //subclasses can be instantiated based on their parent class
+        List<Animal> animalsList = new List<Animal>()
+        {
+            new Dog("Max", 13),
+            new Cat("Roger", 10)
+        };
+
+        foreach(Animal an in animalsList)
+        {
+            //their methods are called based ont their class, not on the parent class
+            Console.WriteLine(an.ToString());
+        }
     }
 
 }

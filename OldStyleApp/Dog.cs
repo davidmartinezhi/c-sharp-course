@@ -20,7 +20,13 @@ namespace OldStyleApp
             Console.WriteLine("WUUF!");
         }
 
-        public override void Play()
+        public new void  PolymorphismExample() //new, makes this method primary, over the superclass method
+        {
+            Console.WriteLine("This method is rom dog.");
+        }
+
+
+        public override void Play() //override is to override virtual methods from the superclass
         {
             if (IsHappy)
             {
