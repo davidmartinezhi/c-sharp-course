@@ -83,3 +83,10 @@ we can have aditional info
     we can create classes just like CarIDInfo and be a "Has A" relationship
 
 
+-----
+Abstract classes
+
+Create classes where we dont want to instantiate any object, we waant to instantiate for example type of shapes
+but not shapes
+
+

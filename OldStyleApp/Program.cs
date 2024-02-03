@@ -1,7 +1,8 @@
 ﻿using Microsoft.VisualBasic;
+using OldStyleApp.AbstractClasses;
 /*
- * cheatsheet
- * https://cheatography.com/laurence/cheat-sheets/c/
+* cheatsheet
+* https://cheatography.com/laurence/cheat-sheets/c/
 */
 
 using System.Collections;
@@ -76,7 +77,9 @@ class Program
         //IEnumerableDemo();
         //IEnumerableDemo2();
 
-        PolymorphismDemo();
+        //PolymorphismDemo();
+
+        AbstractClassesDemo();
 
 
 
@@ -819,6 +822,25 @@ class Program
         animalsList[1].GetAnimalIdInfo();
 
 
+    }
+
+
+    static void AbstractClassesDemo()
+    {
+        Console.WriteLine("Hello world!");
+        Cube cube = new Cube(3.5);
+        cube.GetInfo();
+
+        Sphere sphere = new Sphere(3.5);
+        sphere.GetInfo();
+
+
+        Shape[] shapes = { new Sphere(4), new Cube(3) };
+        foreach(Shape shape in shapes)
+        {
+            shape.GetInfo();
+            Console.WriteLine($"{shape.Name} has a volume of {shape.Volume()}");
+        }
     }
 
 }

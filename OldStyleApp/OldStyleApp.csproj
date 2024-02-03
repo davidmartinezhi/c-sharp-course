@@ -9,8 +9,14 @@
 
   <ItemGroup>
     <None Remove="Notes\" />
+    <None Remove="AnimalClasses\" />
+    <None Remove="ElectricalDeviceClasses\" />
+    <None Remove="AbstractClasses\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Notes\" />
+    <Folder Include="AnimalClasses\" />
+    <Folder Include="ElectricalDeviceClasses\" />
+    <Folder Include="AbstractClasses\" />
   </ItemGroup>
 </Project>
