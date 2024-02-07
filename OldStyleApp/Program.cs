@@ -79,7 +79,8 @@ class Program
 
         //PolymorphismDemo();
 
-        AbstractClassesDemo();
+        //AbstractClassesDemo();
+        DateTimeExample();
 
 
 
@@ -859,5 +860,11 @@ class Program
         }
     }
 
+    static void DateTimeExample() {
+        DateTime dateTime = new DateTime(2018, 5, 31);
+        Console.WriteLine(DateTime.Today); //day
+        Console.WriteLine(DateTime.Now); //date and time
+        Console.WriteLine(DateTime.Today.AddDays(1)); //tomorrow
+    }
 }
 

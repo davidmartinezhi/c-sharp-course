@@ -94,3 +94,17 @@ Generic
         deque, remove data from front
         peek, see data at front
 
+
+====
+NULLABLES. values that can have a value or can not have a value
+Nullable<Int32>
+int? num1 = null;
+double? d = new Double?();
+
+we have to cast when assigning a value that is nullable int? to non nullable int
+num8 = this nullable value ?? this fallback value
+
+====
+
+Garbage collector limpia la memoria que queda siendo utilizada pero ya no es referenciada.
+Esto podría ser por cambiar variable de referencia a null

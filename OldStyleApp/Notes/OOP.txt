@@ -7,6 +7,9 @@ it applies abstraction hides internal implementation and reduce complecity
     private: only class can access that data
     public: anyone can access it
     protected: only the own class and its children can access it
+    internal: only accesible from its assembly. Only from the same project
+
+    Go to the most restrictive as possible always
 
 
 
@@ -90,3 +93,30 @@ Create classes where we dont want to instantiate any object, we waant to instant
 but not shapes
 
 
+INTERFACES VS ABSTRACT CLASSES
+
+interface
+Interfaces can only have declarations not definitions
+classes can have  multiple interfaces
+
+abstract classes
+Abstract classes are partially implemented
+Only abstract classes must be implemented
+
+What the object is ABSTRACT CLASS
+What the object can do is INTERFACE
+
+
+============
+struct are value type, object is reference type
+struct must have value
+
+struct has no inheritance, abstract or default constructor
+
+
+Enum are set of constants.
+    its inmutable and shoud be places at namespace level so it can be used by whole library
+    enum Day {M, T, W, T, F, SAT, S   };
+    can change value in numeric order
+    enum Day {M = 10, T, W, T, F, SAT, S   };
+    then T will be 11, W 12 and so on
